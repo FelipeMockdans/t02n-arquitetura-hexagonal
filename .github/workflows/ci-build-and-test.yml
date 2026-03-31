@@ -65,6 +65,7 @@ jobs:
         shell: bash
         run: |
           if [ -f mvnw ]; then
+            chmod +x mvnw
             ./mvnw -B -ntp verify
           else
             mvn -B -ntp verify
